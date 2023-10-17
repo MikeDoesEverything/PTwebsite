@@ -1,0 +1,72 @@
+{% extends "base.html" %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/CSS/training_plans.css"/>
+    <title>ThePTMaster Training Plans</title>
+    <style>
+      body{
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        gap: 5rem;
+        overflow: disabled;
+      }
+      section{
+        justify-content: center;
+      }
+      .grid {
+        display: grid;
+        max-width: 1200px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+      }
+      .table_image {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Training Plans</h1>
+    <section>
+      <div class="grid">
+        <div class="box">
+          <h1>Why choose me?</h1>
+          <p>
+            What separates me from other Personal Trainers? I am the most qualified
+            personal trainer in the area. With my bachelor’s degree in Sports
+            Science, level 4 in strength and conditioning and level 3 in
+            personal training and my other numerous qualifications, there is
+            no competition. And even more importantly, I am still building
+            upon my knowledge and skills in order to provide you with the best
+            service. In my experience personal training, I have worked with
+            clients of all shapes sizes and skill levels. Some of my clients
+            were obese, some were anorexic, some worked in the military, some
+            were elite, world class athletes, some were bodybuilders and some
+            spent too much time behind a desk and just wanted some exercise.
+            Whatever your goals, I can help you achieve them.
+          </p>
+        </div>
+        <div class="box">
+          <img
+            class="table_image"
+            src="../static/Images/deadlift_bar.jpg"
+            alt="a deadlift"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+{% endblock %}
