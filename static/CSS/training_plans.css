@@ -10,6 +10,10 @@ body{
   section{
     justify-content: center;
   }
+  /* .grid.dark{
+    background-color: black;
+    color: white;
+  } */
   .grid {
     display: grid;
     max-width: 1200px;
@@ -19,4 +23,14 @@ body{
   }
   .table_image {
     max-width: 100%;
+  }
+  .box{
+    text-align: center;
+  }
+  .grid .card{
+    justify-self: center;
+  }
+  .DUP_list{
+    font-size: 1rem;
+    text-align: left;
   }
