@@ -28,17 +28,54 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   overflow: disabled;
+  font-size: 1.5rem;
 }
+
+.hero-text h1{
+  font-size: 6rem;
+  color: white;
+}
+
+.hero-text p{
+  font-size: 3rem;
+}
+
+.hero-text .btn{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border:0;
+  border-radius: 40px;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: rgba(77, 77, 77, 0.8);
+}
+
+.btn{
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border:0;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color:navy;
+}
+
+.btn:hover{
+  background-color: brown;
+  transform: scale(1.1, 1.1);
+}
+
+.btn-dark:hover{
+  background-color: grey;
+  transform: scale(1.1, 1.1);
+}
+
 .main {
   max-width: 1200px;
   border: 4rem;
   padding-top: 6rem;
-}
-
-h1 {
-  color: blueviolet;
-  font-size: xx-large;
-  font-weight: bold;
 }
 
 
