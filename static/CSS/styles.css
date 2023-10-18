@@ -13,6 +13,9 @@ body {
   justify-content: center;
 }
 
+section{
+  padding: 6rem;
+}
 /* .main {
   max-width: 1200px;
   border: 4rem;
@@ -36,6 +39,7 @@ body {
   color: white;
   overflow: disabled;
   font-size: 1.5rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
 }
 
 .hero-text h1{
@@ -103,6 +107,7 @@ body {
 
 .card{
   border-radius: 30px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.8)
 }
 
 .card:hover{
@@ -116,7 +121,12 @@ body {
 }
 
 .qualifications{
-
+  background: url(../Images/background_picture2_edited.jpg);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* .homepage_information {
@@ -129,6 +139,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 10px;
+  margin-bottom: 6rem;
   /* justify-items: center;
   justify-content: center; */
 }
@@ -137,8 +148,20 @@ body {
   max-width: 100%;
 }
 
+.box{
+  max-width: 1200px;
+  color: white;
+}
+
 ul {
   list-style: none;
+}
+.newcomer_message{
+  max-width: 1200px;
+}
+
+.my_commitment{
+  max-width: 1200px;
 }
 @media screen and (max-width: 1024px) {
 
