@@ -1,0 +1,74 @@
+{% extends "base.html" %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/CSS/contact_us.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page_wrapper">
+        <div class="contact_us_text">
+            <div>
+                <h1>Contact Us</h1>
+                <br>
+                <h2>let us know what we can help you with</h2>
+                <br>
+                <p>
+                  Here at the personal training masters, we pride ourselves on providing
+                  excellent quality service, and having a superior knowledge base, when
+                  compared to other personal trainers. We have dealt with all different
+                  types of clients, from elite athletes, to beginners.
+                </p>
+                <p>
+                  We are happy to answer any and all questions. Please contact us using
+                  the form below if you have any queries at all.
+                </p>
+            </div>
+        </div>
+        <div class="form_container">
+          <form>
+            <div class="form-group">
+              <label for="Name">Name</label>
+              <input
+                type="name"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="your name here"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput2"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">What are your goals?</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Strength</option>
+                <option>Hypertrophy</option>
+                <option>Weight loss</option>
+                <option>Athletic performance</option>
+                <option>Powerbuilding</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Additional iformation</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+    </div>
+  </body>
+</html>
+{% endblock %}

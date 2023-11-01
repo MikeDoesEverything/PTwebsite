@@ -1,36 +1,60 @@
-body{
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    gap: 5rem;
-    overflow: disabled;
-  }
-  section{
-    justify-content: center;
-  }
-  /* .grid.dark{
+h1 {
+  text-align: center;
+  margin: 4rem;
+  font-weight: 700;
+  font-size: 5rem;
+}
+.text_white {
+  color: white;
+}
+section {
+  justify-content: center;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+.section_dark {
+  background-color: navy;
+  clip-path: polygon(49% 0, 97% 6%, 94% 100%, 6% 100%, 4% 7%);
+  padding: 4rem;
+}
+/* .grid.dark{
     background-color: black;
     color: white;
   } */
-  .grid {
-    display: grid;
-    max-width: 1200px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 10px;
-  }
-  .table_image {
-    max-width: 100%;
-  }
-  .box{
-    text-align: center;
-  }
-  .grid .card{
-    justify-self: center;
-  }
-  .DUP_list{
-    font-size: 1rem;
-    text-align: left;
-  }
+.grid {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  margin: 0 auto;
+}
+.table_image {
+  max-width: 100%;
+}
+.box {
+  text-align: center;
+}
+.grid .card {
+  justify-self: center;
+  max-height: 450px;
+  text-align: center;
+}
+.DUP_list {
+  font-size: 1rem;
+  text-align: left;
+  color: white;
+}
+.coming_soon {
+  padding: 6rem;
+  display: flex;
+  justify-content: center;
+}
+.coming_soon_box{
+  background: url(../Images/dumbells.jpg);
+  width: 1200px;
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+  color: white;
+}

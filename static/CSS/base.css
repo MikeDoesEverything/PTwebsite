@@ -1,0 +1,60 @@
+.navbar{
+  position:fixed;
+  top: 0;
+  width:99vw;
+  z-index: 100;
+  opacity: .8;
+  color: white;
+}
+
+.background{
+  background: rgba(0, 0, 128, 0.5);
+  /* background: linear-gradient(90deg, rgba(130,0,62,0.5) 0%, rgba(90,9,121,0.5) 55%, rgba(27,1,85,0.5) 100%); */
+}
+.background_footer{
+  background: url("../static/Images/contact_us.jpg");
+  background-size: cover;
+  background-position: 0 60%;
+  text-align: center;
+}
+
+
+.grid_contact{
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  text-align: center;
+  color: white;
+  z-position: -1;
+}
+.grid_contact ul{
+  list-style: none;
+}
+.grid h3{
+  color: white;
+}
+p, li{
+  font-size: 1.2rem;
+}
+.box{
+  vertical-align: middle;
+}
+.to_top{
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: white;
+}
+.to_top::before{
+  content: "^";
+  display: block;
+}
+.to_top:hover::before{
+  transform: translate(0, -10px);
+  transition-duration: 0.3s;
+}
+.to_top:hover{
+  color: brown;
+}

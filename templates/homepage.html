@@ -9,12 +9,15 @@
     <title>ThePTMaster Homepage</title>
   </head>
   <body>
-    <div class="hero-image">
+    <div class="hero-image" data-AOS="zoom-in">
+      {% comment %} <video height="auto" width="1800px" autoplay repeat>
+        <source src="../static/Images/cloud_background.mp4" type="video/mp4">
+      </video> {% endcomment %}
       <img
         class="hero-image-homepage"
         src="static\Images\deadlift_cropped.jpg"
         alt="A deadlift"
-      />
+      >
       <div class="hero-text">
         <h1>The Personal Training Masters</h1>
         <p>Train Smart</p>
@@ -43,12 +46,57 @@
         </div>
         <div class="card" style="width: 18rem">
           <img
-            src="static\Images\deadlift_bar.jpg"
+            src="static\Images\shoulder_press.jpg"
+            class="card_image_hypertrophy_programme"
+            alt="a picture of a shoulder press"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Hypertrophy Programmes</h5>
+            <p class="card-text">
+              Click below if you want to find a programme to give you quick and
+              persistent Hypertrophy (muscle size increase) progress.
+            </p>
+            <a href="#" class="btn btn-primary">Click Here</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="static\Images\lean_couple.jpg"
             class="card_image_strength_programme"
             alt="a picture of a deadlift"
           />
           <div class="card-body">
-            <h5 class="card-title">Strength Programmes</h5>
+            <h5 class="card-title">Weight loss Programmes</h5>
+            <p class="card-text">
+              Click below if you want to find a programme to give you quick and
+              persistent weight loss.
+            </p>
+            <a href="#" class="btn btn-primary">Click Here</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="static\Images\overhead_squat.jpg"
+            class="card_image_strength_programme"
+            alt="a picture of a deadlift"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Powerbuilding Programmes</h5>
+            <p class="card-text">
+              Click below if you want to find a programme to give you quick and
+              persistent strength and hypertrophy progress.
+            </p>
+            <a href="#" class="btn btn-primary">Click Here</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="static\Images\running.jpg"
+            class="card_image_strength_programme"
+            alt="a picture of a deadlift"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Endurance Programmes</h5>
             <p class="card-text">
               Click below if you want to find a programme to give you quick and
               persistent strength progress.
@@ -58,60 +106,15 @@
         </div>
         <div class="card" style="width: 18rem">
           <img
-            src="static\Images\deadlift_bar.jpg"
+            src="static\Images\clients_planking.jpg"
             class="card_image_strength_programme"
             alt="a picture of a deadlift"
           />
           <div class="card-body">
-            <h5 class="card-title">Strength Programmes</h5>
+            <h5 class="card-title">One to One Personal Training and Programmes</h5>
             <p class="card-text">
               Click below if you want to find a programme to give you quick and
-              persistent strength progress.
-            </p>
-            <a href="#" class="btn btn-primary">Click Here</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="static\Images\deadlift_bar.jpg"
-            class="card_image_strength_programme"
-            alt="a picture of a deadlift"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Strength Programmes</h5>
-            <p class="card-text">
-              Click below if you want to find a programme to give you quick and
-              persistent strength progress.
-            </p>
-            <a href="#" class="btn btn-primary">Click Here</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="static\Images\deadlift_bar.jpg"
-            class="card_image_strength_programme"
-            alt="a picture of a deadlift"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Strength Programmes</h5>
-            <p class="card-text">
-              Click below if you want to find a programme to give you quick and
-              persistent strength progress.
-            </p>
-            <a href="#" class="btn btn-primary">Click Here</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="static\Images\deadlift_bar.jpg"
-            class="card_image_strength_programme"
-            alt="a picture of a deadlift"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Strength Programmes</h5>
-            <p class="card-text">
-              Click below if you want to find a programme to give you quick and
-              persistent strength progress.
+              persistent progress.
             </p>
             <a href="#" class="btn btn-primary">Click Here</a>
           </div>
@@ -122,59 +125,61 @@
     {% comment %} grid text section {% endcomment %}
 
     <section class="qualifications">
-      <div class="grid">
-        <div class="box" data-AOS="fade-right">
-          <h2>Why choose me?</h2>
-          <br>
-          <br>
-          <h3>My experience and qualifications</h2>
+      <div class="qualifications_cover">
+        <div class="grid">
+          <div class="box" data-AOS="fade-right">
+            <h2>Why choose me?</h2>
             <br>
-          <ul>
-            <li>University degree in sports science (BSC)</li>
-            <li>Level 4 in strength and conditioning</li>
-            <li>Level 3 in Personal training</li>
-            <li>Level 2 in Gym instructing</li>
-            <li>Sports nutrition diploma</li>
-            <li>Nearly a decade’s worth of coaching gym based training</li>
-            <li>A decade of independent study</li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+            <br>
+            <h3>My experience and qualifications</h2>
+              <br>
+            <ul>
+              <li>University degree in sports science (BSC)</li>
+              <li>Level 4 in strength and conditioning</li>
+              <li>Level 3 in Personal training</li>
+              <li>Level 2 in Gym instructing</li>
+              <li>Sports nutrition diploma</li>
+              <li>Nearly a decade’s worth of coaching gym based training</li>
+              <li>A decade of independent study</li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="box" data-AOS="fade-left">
+            <img
+              class="table_image"
+              src="../static/Images/mike.jpg"
+              alt="a deadlift"
+            />
+          </div>
         </div>
-        <div class="box" data-AOS="fade-left">
-          <img
-            class="table_image"
-            src="../static/Images/deadlift_bar.jpg"
-            alt="a deadlift"
-          />
-        </div>
-      </div>
-      <div class="grid">
-        <div class="box" data-AOS="fade-right">
-          <img
-            class="table_image"
-            src="../static/Images/deadlift_bar.jpg"
-            alt="a deadlift"
-          />
-        </div>
-        <div class="box" data-AOS="fade-left">
-          <h2>What separates me from other PT’s?</h2>
-          <br>
-          <p>
-            I am the most qualified personal trainer in the area. With my
-            bachelor’s degree in Sports Science, level 4 in strength and
-            conditioning and level 3 in personal training and my other numerous
-            qualifications, there is no competition. And even more importantly,
-            I am still building upon my knowledge and skills in order to provide
-            you with the best service. In my experience personal training, I
-            have worked with clients of all shapes sizes and skill levels. Some
-            of my clients were obese, some were anorexic, some worked in the
-            military, some were elite, world class athletes, some were
-            bodybuilders and some spent too much time behind a desk and just
-            wanted some exercise. Whatever your goals, I can help you achieve
-            them.
-          </p>
+        <div class="grid">
+          <div class="box" data-AOS="fade-right">
+            <img
+              class="table_image"
+              src="../static/Images/mike2.jpg"
+              alt="a deadlift"
+            />
+          </div>
+          <div class="box" data-AOS="fade-left">
+            <h2>What separates me from other PT’s?</h2>
+            <br>
+            <p>
+              I am the most qualified personal trainer in the area. With my
+              bachelor’s degree in Sports Science, level 4 in strength and
+              conditioning and level 3 in personal training and my other numerous
+              qualifications, there is no competition. And even more importantly,
+              I am still building upon my knowledge and skills in order to provide
+              you with the best service. In my experience personal training, I
+              have worked with clients of all shapes sizes and skill levels. Some
+              of my clients were obese, some were anorexic, some worked in the
+              military, some were elite, world class athletes, some were
+              bodybuilders and some spent too much time behind a desk and just
+              wanted some exercise. Whatever your goals, I can help you achieve
+              them.
+            </p>
+          </div>
         </div>
       </div>
     </section>
