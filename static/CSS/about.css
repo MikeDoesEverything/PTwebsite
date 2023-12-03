@@ -67,14 +67,19 @@ ul{
 }
 
 .section_services{
-  background-color: navy;
+  background: url(../images/clients_planking.jpg);
+  background-size: cover;
+  background-position: 0 50%;
   color: white;
   width: 100%;
+  padding: 0;
 }
 
 .services{
-  margin-left: 30%;
-  margin-bottom: 5rem;
+  background: rgba(0,0,128,0.5);
+  text-align: center;
+  padding-bottom: 8rem;
+  padding-top: 8rem;
 }
 
 .section_121{
@@ -84,4 +89,44 @@ ul{
   clip-path: polygon(43% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
   padding-top: 6rem;
   padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 1024px){
+  .header_text h1{
+    font-size: 2rem;
+  }
+  .header_container {
+    max-height: 25rem;
+    height: auto;
+    position: relative;
+    border-bottom: 0;
+  }
+  .header_image {
+    height: auto;
+  }
+  .header_text {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 0;
+    width: 100vw;
+    color: white;
+  }
+  
+  .header_consultation_button {
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    width: fit-content;
+  }
+  section{
+    padding: 1rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+  }
 }

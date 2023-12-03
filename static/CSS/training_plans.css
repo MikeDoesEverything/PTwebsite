@@ -1,8 +1,14 @@
 h1 {
   text-align: center;
-  margin: 4rem;
-  font-weight: 700;
+  margin: 2rem;
+  margin-top: 3rem;
+  font-weight: 500;
   font-size: 5rem;
+}
+header {
+  background-color: whitesmoke;
+  padding: 1rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 }
 .text_white {
   color: white;
@@ -12,9 +18,14 @@ section {
   margin-top: 3rem;
   padding: 2rem;
 }
+.DUP_background {
+  background: url(../images/dumbells.jpg);
+  background-size: cover;
+  /* padding: 0; */
+}
 .section_dark {
-  background-color: navy;
-  clip-path: polygon(49% 0, 97% 6%, 94% 100%, 6% 100%, 4% 7%);
+  background-color: rgba(0, 0, 128, 0.7);
+  /* clip-path: polygon(49% 0, 97% 6%, 94% 100%, 6% 100%, 4% 7%); */
   padding: 4rem;
 }
 /* .grid.dark{
@@ -50,7 +61,7 @@ section {
   display: flex;
   justify-content: center;
 }
-.coming_soon_box{
+.coming_soon_box {
   background: url(../Images/dumbells.jpg);
   width: 1200px;
   background-size: cover;
