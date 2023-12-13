@@ -29,13 +29,25 @@
       .navbar-toggler{
         background-color: white;
       }
+
+
+      .footer_header{
+        padding: 2rem;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        color: white;
+      } 
+      .footer_header a{
+        font-size: 1.4rem;
+      }
       .background{
-        background: rgba(0, 0, 0, 1);
+        background: rgba(0, 0, 0, .9);
       }
       .background_footer{
-        {% comment %} background: url("../static/Images/contact_us.jpg");
+        {% comment %} background: url("../static/Images/deadlift_bar.jpg");
         background-size: cover;
-        background-position: 0 60%;  {% endcomment %}
+        background-position: 0 30%; {% endcomment %}
         text-align: center;
       }
       .grid_contact{
@@ -134,6 +146,23 @@
       {% endblock %}
     <footer class="background_footer">
       <div class="background">
+        <div class="footer_header">
+          <h1>Contact Us</h1>
+          <br>
+          <h2>let us know what we can help you with</h2>
+          <br>
+          <p>
+            Here at the personal training masters, we pride ourselves on providing
+            excellent quality service, and having a superior knowledge base, when
+            compared to other personal trainers. We have dealt with all different
+            types of clients, from elite athletes, to beginners.
+          </p>
+          <p>
+            We are happy to answer any and all questions. Please contact us using
+            the email below if you have any queries at all.
+          </p>
+          <a href="mailto:theathleteapproach@gmail.com">theathleteapproach@gmail.com</a>
+        </div>
         <div class="grid_contact" data-AOS="fade-in">
           <div class="box">
             <br>

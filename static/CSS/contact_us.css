@@ -34,7 +34,7 @@ body {
   justify-content: center;
 }
 
-.form-control{
+.form-control {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -49,6 +49,9 @@ form {
   background: none;
   text-align: center;
 }
+.footer_header {
+  display: none;
+}
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
 }
