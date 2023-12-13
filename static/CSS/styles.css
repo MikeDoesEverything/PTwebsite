@@ -1,35 +1,31 @@
 body {
-  /* background-image: url("../Images/background_blue.jpg"); */
-  /* background-color: black;
-  background-size: cover;
-  background-repeat: no-repeat; */
-  margin: 0;
-  padding: 0;
+  background-image: url("/static/Images/deadlift_cropped.jpg");
+  background-color: black;
+  background-size: 2000px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
-section{
+section {
   padding: 6rem;
 }
 /* .main {
-  max-width: 1200px;
-  border: 4rem;
-  padding-top: 6rem;
-} */
-
-.hero-image {
-  position: relative;
+    max-width: 1200px;
+    border: 4rem;
+    padding-top: 6rem;
+  } */
+.blue-cover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
-
-.hero-image-homepage {
-  width: 100%;
+.hero-container {
+  height: 100vh;
 }
-
 .hero-text {
   position: absolute;
   text-align: center;
@@ -39,53 +35,52 @@ section{
   color: white;
   overflow: disabled;
   font-size: 1.5rem;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.hero-text h1{
+.hero-text h1 {
   font-size: 4.5rem;
   color: white;
   font-weight: 400;
 }
 
-.hero-text p{
+.hero-text p {
   font-size: 3rem;
 }
 
-.hero-text .btn{
+.hero-text .btn {
   font-size: 1rem;
   font-weight: bold;
-  padding:0.5rem 1rem;
-  border:0;
+  padding: 0.5rem 1rem;
+  border: 0;
   border-radius: 40px;
   cursor: pointer;
   white-space: nowrap;
   background-color: navy;
 }
 
-.btn{
+.btn {
   font-size: 1rem;
   font-weight: bold;
   padding: 0.5rem 1rem;
-  border:0;
+  border: 0;
   border-radius: 20px;
   cursor: pointer;
   white-space: nowrap;
-  background-color:navy;
+  background-color: navy;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: brown;
   transform: scale(1.1, 1.1);
 }
 
-.btn-dark:hover{
+.btn-dark:hover {
   background-color: brown;
   transform: scale(1.1, 1.1);
 }
 
-.card_section{
-  background-color: whitesmoke;
+.card_section {
   padding: 6rem;
   margin: 0;
   width: 100vw;
@@ -102,39 +97,39 @@ section{
   max-width: 1500px;
 }
 
-.card-body{
- text-align: center;
+.card-body {
+  text-align: center;
 }
 
-.card{
+.card {
   border-radius: 30px;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.8);
   height: 450px;
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.1);
   transition-duration: 0.5s;
 }
 
-.card img{
+.card img {
   width: 17rem;
   padding: 15px;
 }
 
-.card a{
-  position:absolute;
+.card a {
+  position: absolute;
   bottom: 1rem;
   right: 5.5rem;
 }
 
-.card p{
+.card p {
   font-size: 1rem;
 }
 
-.qualifications{
-  background: url(../Images/gym_background2.jpg);
-  background-size: cover;
+.qualifications {
+  background-color: rgba(255, 255, 255, 0.8);
+  clip-path: polygon(0 0, 31% 4%, 100% 0, 100% 100%, 76% 97%, 0 100%);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -142,27 +137,32 @@ section{
   padding: 0;
 }
 
-.qualifications_cover{
-  background: rgba(0,0,128,0.5);
+.qualifications_cover {
   padding: 6rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: black;
 }
 
-.qualifications h2{
+.qualifications h2 {
   font-size: 3rem;
   text-align: center;
+  color: black;
 }
-.qualifications .box{
+.qualifications h3 {
+  color: black;
+}
+.qualifications .box {
   margin-left: 3rem;
+  color: black;
 }
 /* .homepage_information {
-  text-align: center;
-} */
+    text-align: center;
+  } */
 
-.grid{
+.grid {
   display: grid;
   max-width: 1200px;
   grid-template-columns: 1fr 1fr;
@@ -170,77 +170,92 @@ section{
   gap: 10px;
   margin-bottom: 6rem;
   /* justify-items: center;
-  justify-content: center; */
+    justify-content: center; */
 }
 
 .table_image {
   max-width: 100%;
 }
 
-.box{
+.box {
   max-width: 1200px;
-  color: white;
 }
 
 ul {
   list-style: none;
 }
-.newcomer_message{
-  max-width: 1000px;
+
+.newcomer_section {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.my_commitment{
+.newcomer_message {
   max-width: 1000px;
+  color: white;
+}
+
+.my_commitment {
+  max-width: 1000px;
+  color: white;
 }
 
 @media screen and (max-width: 1024px) {
-  .hero-text{
+  .hero-text {
     font-size: 1rem;
   }
-  section{
+  section {
     padding: 1rem;
   }
-  .hero-text h1{
+  .hero-text h1 {
     font-size: 2rem;
   }
-  .hero-text p{
+  .hero-text p {
     font-size: 1.5rem;
   }
-  .hero-image-homepage{
+  .hero-image-homepage {
     height: 100vh;
     width: 100%;
     object-fit: cover;
   }
-  .hero-image{
+  .hero-image {
     max-width: 100vw;
   }
   .card-container {
     gap: 3rem;
   }
-  .qualifications{
+  .card_section {
+    padding: 1rem;
+  }
+  .qualifications {
     background-position: 30%, 30%;
     text-align: center;
+    clip-path: none;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
-  .qualifications_cover{
+  .qualifications_cover {
     padding: 0;
   }
-  .qualifications .box{
+  .qualifications .box {
     padding: 0;
     margin: 0;
     justify-content: center;
   }
-  .grid{
+  .grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
   }
-  .qualifications ul{
+  .qualifications ul {
     padding-left: 0;
   }
-  .ordered_box{
-    order:1;
+  .ordered_box {
+    order: 1;
   }
-  .ordered_table_image{
+  .ordered_table_image {
     order: 2;
   }
 }
