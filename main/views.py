@@ -8,3 +8,7 @@ def homepage(request):
 
 def contact_us(request):
     return render(request, "contact_us.html")
+
+
+def design_page(request):
+    return render(request, "design_page.html")

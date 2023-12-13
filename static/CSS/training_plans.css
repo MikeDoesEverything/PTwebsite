@@ -1,37 +1,95 @@
+body {
+  background: url(../Images/deadlift.jpg);
+  background-color: black;
+  background-size: 2000px;
+  /* background-size: 100vw; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+section {
+  width: 1200px;
+  display: inline;
+  padding: 2rem;
+}
+
+.background_cover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.training_plan_grid {
+  display: grid;
+  max-width: 1205px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  gap: 5px;
+  margin: 5rem auto;
+}
+.training_plan_grid img {
+  max-width: 300px;
+  max-height: 200px;
+}
+.training_plan_grid .box {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.box_strength:hover .overlay,
+.box_hypertrophy:hover .overlay,
+.box_weight_loss:hover .overlay,
+.box_powerbuilding:hover .overlay,
+.box_endurance:hover .overlay,
+.box_personal_training:hover .overlay,
+.box_athletic_performance:hover .overlay,
+.box_power:hover .overlay {
+  opacity: 1;
+}
+
 h1 {
   text-align: center;
   margin: 2rem;
-  margin-top: 3rem;
-  font-weight: 500;
-  font-size: 5rem;
+  margin-top: 5rem;
+  color: white;
+}
+.header_text h2 {
+  text-align: center;
 }
 header {
-  background-color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  height: fit-content;
 }
 .text_white {
   color: white;
 }
-section {
-  justify-content: center;
-  margin-top: 3rem;
-  padding: 2rem;
-}
-.DUP_background {
-  background: url(../images/dumbells.jpg);
-  background-size: cover;
-  /* padding: 0; */
-}
+/* training_plan_section_dark {
+  padding: 2 rem; 
+} */
 .section_dark {
   background-color: rgba(0, 0, 128, 0.7);
-  /* clip-path: polygon(49% 0, 97% 6%, 94% 100%, 6% 100%, 4% 7%); */
-  padding: 4rem;
+  clip-path: polygon(0 0, 31% 4%, 100% 0, 100% 100%, 76% 97%, 0 100%);
+  padding: 8rem;
 }
-/* .grid.dark{
-    background-color: black;
-    color: white;
-  } */
 .grid {
   display: grid;
   max-width: 1200px;
@@ -46,12 +104,11 @@ section {
 .box {
   text-align: center;
 }
-.grid .card {
-  justify-self: center;
-  max-height: 450px;
-  text-align: center;
+
+.light_section {
+  padding: 8rem;
 }
-.DUP_list {
+.training_plan_list {
   font-size: 1rem;
   text-align: left;
   color: white;
@@ -62,10 +119,22 @@ section {
   justify-content: center;
 }
 .coming_soon_box {
-  background: url(../Images/dumbells.jpg);
   width: 1200px;
-  background-size: cover;
-  background-position: bottom;
   text-align: center;
   color: white;
+}
+
+@media screen and (max-width: 1250px) {
+  .training_plan_grid {
+    max-width: 602px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .training_plan_grid {
+    max-width: 302px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 }
