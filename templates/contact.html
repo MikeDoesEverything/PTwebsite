@@ -1,0 +1,94 @@
+{% extends "base.html" %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="/static/CSS/contact-us.css" />
+  </head>
+  <body>
+    <div class="page-wrapper" data-AOS="fade-in" data-aos-duration="2000">
+      <div class="contact-us-text">
+        <div>
+          <h1>Contact Us</h1>
+          <br />
+          <h2>let us know what we can help you with</h2>
+          <br />
+          <p>
+            Here at the personal training masters, we pride ourselves on
+            providing excellent quality service, and having a superior knowledge
+            base, when compared to other personal trainers. We have dealt with
+            all different types of clients, from elite athletes, to beginners.
+          </p>
+          <p>
+            We are happy to answer any and all questions. Please contact us
+            using the form below if you have any queries at all.
+          </p>
+        </div>
+      </div>
+      <div class="form-container">
+        <form action="" method="post">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="nameInput">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nameInput"
+              name="name"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="emailInput">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="emailInput"
+              name="email"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="numberInput">Number</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="numberInput"
+              name="number"
+              placeholder="Your phone number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="goalSelect">What are your goals?</label>
+            <select class="form-control" id="goalSelect" name="goals">
+              <option selected disabled>Select goal</option>
+              <option>Strength</option>
+              <option>Hypertrophy</option>
+              <option>Weight loss</option>
+              <option>Athletic performance</option>
+              <option>Powerbuilding</option>
+              <option>Endurance</option>
+              <option>Running</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="additionalInfoTextarea">Additional information</label>
+            <textarea
+              class="form-control"
+              id="additionalInfoTextarea"
+              name="additional-info"
+              rows="3"
+              placeholder="Enter additional information"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+{% endblock %}

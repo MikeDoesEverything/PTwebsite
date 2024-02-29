@@ -1,0 +1,631 @@
+{% extends "base.html" %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/CSS/training-plans.css"/>
+    <link rel="stylesheet" href="../static/CSS/components.css"/>
+    <title>ThePTMaster Training Plans</title>
+  </head>
+  <body>
+    <div class="background-cover">
+      <header class="header-text">
+        <h1>Personal Training Plans</h1>
+        <h2>pick your pesonalised plan</h2>
+        <div class="training-plan-grid">
+          <a href="#strength">
+            <div class="box box-strength">
+              <img
+                src="../static/Images/deadlift-bar.jpg"
+                class="strength-programme"
+                alt="a picture of a deadlift"
+              />
+              <div class="overlay">
+                <h2>Strength</h2>
+              </div>
+            </div>
+          </a>
+          <a href="#hypertrophy">
+              <div class="box box-hypertrophy">
+                <img
+                  src="../static/images/bodybuilder-cropped.jpg"
+                  class="strength-programme"
+                  alt="a picture of a bodybuilder"
+                  />
+                <div class="overlay">
+                  <h2>Hypertrophy</h2>
+                </div>
+              </div>
+          </a>
+          <a href="#weight-loss">
+            <div class="box box-weight-loss">
+                <img
+                  src="../static/Images/lean-couple.jpg"
+                  class="strength-programme"
+                  alt="a picture of a lean couple"
+                />
+                <div class="overlay">
+                  <h2>Weight Loss</h2>
+                </div>
+            </div>
+          </a>
+            <div class="box box-powerbuilding">
+              <a href="#powerbuilding">
+                <img
+                  src="../static/Images/overhead-squat.jpg"
+                  class="strength-programme"
+                  alt="a picture of a overhead squat"
+                  />
+                <div class="overlay">
+                  <h2>Powerbuilding</h2>
+                </div>
+              </a>
+            </div>
+            <div class="box box-endurance">
+              <a href="#running">
+                <img
+                  src="../static/Images/running.jpg"
+                  class="strength-programme"
+                  alt="a picture of a girl running"
+                />
+                <div class="overlay">
+                  <h2>Endurance</h2>
+                </div>
+              </a>
+            </div>
+            <div class="box box-personal-training">
+              <a href="#personalised">
+                <img
+                  src="../static/Images/clients-planking.jpg"
+                  class="strength-programme"
+                  alt="a picture of a personal trainer with two clients planking"
+                />
+                <div class="overlay">
+                  <h2>Personalised Plans</h2>
+                </div>
+              </a>
+            </div>
+            <div class="box box-athletic-performance">
+              <a href="#athletic-performance">
+                <img
+                  src="../static/Images/dunk.jpg"
+                  class="strength-programme"
+                  alt="a picture of a man dunking in basketball"
+                />
+                <div class="overlay">
+                  <h2>Athletic performance</h2>
+                </div>
+              </a>
+            </div>
+            <div class="box box-power">
+              <a href="#power">
+                <img
+                  src="../static/Images/sled-push.jpg"
+                  class="strength-programme"
+                  alt="a picture of a man pushing a sled"
+                />
+                <div class="overlay">
+                  <h2>Power</h2>
+                </div>
+              </a>
+            </div>
+        </div>
+      </header>
+      <section id="strength" class="training-plan-section-dark" data-AOS="fade-up">
+        <div class="section-dark">
+          <div class="grid grid-dark">
+            <div class="box text-white box-info" data-AOS="fade-right">
+              <h2>Beginners Strength Plan</h2>
+              <h3>12 week training plan</h3>
+              <h3>entry beginner level</h3>
+              <p>
+                Perfect for anyone who is just starting at the gym and wants to get into weight lifting
+                <br>
+                <br>
+                The recommended training age for this programme is 0 years of weight lifting in the gym.
+                <br>
+                <br>
+                3/10 difficulty 
+                <br>
+                <br>
+                <h3>Summary</h3>
+                <p>
+                  <ul class="training-plan-list">
+                    <li>12 week long programme</li>
+                    <li>Low frequency training</li>
+                    <li>1x a week on every exercise and muscle group</li>
+                    <li>Machine exercises</li>
+                    <li>No workout is pushed to the limit</li>
+                    <li>Ranked at a 3 out of 10 on the difficulty scale</li>
+                    <li>Designed for improving strength and size</li>
+                    <li>Primary benefit is strength</li>
+                  </ul>
+                </p>
+              </p>
+            </div>
+            <div class="box" data-AOS="fade-left">
+              <div class="card" style="width: 18rem" >
+                <img
+                  src="../static/Images/deadlift-bar-cropped.jpg"
+                  class="card-image-strength-programme"
+                  alt="a picture of a deadlift"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Beginners Strength Programme</h5>
+                  <p class="card-text">
+                    Click below if you are a beginner lifter and want a programme to give you quick strength progress.
+                  </p>
+                  <h5>£50</h5>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="light-section">
+          <div class="grid">
+            <div class="box box-info" data-AOS="fade-right">
+              <h2>Daily Undulating Periodisation (DUP)</h2>
+              <h3>6-week training plan</h3>
+              <h3>intermediate level</h3>
+              <p>
+                Perfect for anyone into powerlifting!
+                <br>
+                <br>
+                The recommended training age for this programme is 2 years of weight lifting in the gym.
+                <br>
+                <br>
+                6/10 difficulty 
+                <br>
+                <h3>Summary</h3>
+                <p>
+                  <ul class="training-plan-list">
+                    <li>6 week long programme</li>
+                    <li>High frequency training</li>
+                    <li>3x a week on every exercise and muscle group</li>
+                    <li>All compound exercises (Squats, deadlifts, squats, pull ups/lat pulldowns)</li>
+                    <li>No workout is pushed to the limit</li>
+                    <li>Ranked at a 6 out of 10 on the difficulty scale</li>
+                    <li>Designed for improving strength and size</li>
+                    <li>Primary benefit is strength</li>
+                  </ul>
+                </p>
+              </p>
+            </div>
+            <div class="box" data-AOS="fade-left">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../static/Images/deadlift-bar-cropped.jpg"
+                  class="card-image-strength-programme"
+                  alt="a picture of a deadlift"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">6 week DUP</h5>
+                  <p class="card-text">
+                    Click below if you want to find a programme to give you quick and
+                    persistent strength progress.
+                  </p>
+                  <br>
+                  <h5>£30</h5>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="DUP-background" data-AOS="fade-up">
+        <div class="section-dark">
+          <div class="grid grid-dark">
+            <div class="box text-white box-info" data-AOS="fade-right">
+              <h2>Daily Undulating Periodisation (DUP)</h2>
+              <h3>12-week training plan</h3>
+              <h3>beginner level</h3>
+              <p>
+                Perfect for anyone looking to move into powerlifting!
+                <br>
+                <br>
+                The recommended training age for this programme is 2 years of weight lifting in the gym.
+                <br>
+                <br>
+                6/10 difficulty 
+                <br>
+                <br>
+                <h3>Summary</h3>
+                <p>
+                  <ul class="training-plan-list">
+                    <li>12 week long programme</li>
+                    <li>High frequency training</li>
+                    <li>3x a week on every exercise and muscle group</li>
+                    <li>All compound exercises (Squats, deadlifts, squats, pull ups/lat pulldowns)</li>
+                    <li>No workout is pushed to the limit</li>
+                    <li>Ranked at a 6 out of 10 on the difficulty scale</li>
+                    <li>Designed for improving strength and size</li>
+                    <li>Primary benefit is strength</li>
+                  </ul>
+                </p>
+            </div>
+            <div class="box" data-AOS="fade-left">
+              <div class="card" style="width: 18rem" >
+                <img
+                  src="../static/Images/deadlift-bar-cropped.jpg"
+                  class="card-image-strength-programme"
+                  alt="a picture of a deadlift"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">12 week DUP</h5>
+                  <p class="card-text">
+                    Click below if you want to find a programme to give you quick and
+                    persistent strength progress.
+                  </p>
+                  <br>
+                  <h5>£50</h5>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section>
+        <div id="hypertrophy"class="light-section">
+          <div class="grid">
+            <div class="box box-info" data-AOS="fade-right">
+              <h2>Beginners Hypertrophy Plan</h2>
+              <h3>12-week training plan</h3>
+              <h3>entry beginner level</h3>
+              <p>
+                Perfect for anyone looking to build muscle size in the gym
+                <br>
+                <br>
+                The recommended training age for this programme is 0 years of weight lifting in the gym.
+                <br>
+                <br>
+                3/10 difficulty 
+                <br>
+                <h3>Summary</h3>
+                <p>
+                  <ul class="training-plan-list">
+                    <li>12 week long programme</li>
+                    <li>Low frequency training</li>
+                    <li>1x a week on every exercise and muscle group</li>
+                    <li>Machine and isolation exercises</li>
+                    <li>No workout is pushed to the limit</li>
+                    <li>Ranked at a 3 out of 10 on the difficulty scale</li>
+                    <li>Designed for improving strength and size</li>
+                    <li>Primary benefit is size</li>
+                  </ul>
+                </p>
+              </p>
+            </div>
+            <div class="box" data-AOS="fade-left">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../static/Images/bodybuilder-cropped.jpg"
+                  class="card-image-strength-programme"
+                  alt="a picture of a bodybuilder"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Hypertrophy Programmes</h5>
+                  <p class="card-text">
+                    Click below if you want to find a programme to increase the size of your muscles.
+                  </p>
+                  <br>
+                  <h5>£50</h5>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="weight-loss" class="training-plan-section-dark" data-AOS="fade-up">
+        <div class="section-dark">
+          <div class="grid grid-dark">
+            <div class="box text-white box-info" data-AOS="fade-right">
+              <h2>Weight Loss Programe</h2>
+              <h3>12-week training & diet plan</h3>
+              <h3>Beginner-intermediate level</h3>
+              <p>
+                Perfect for anyone looking to lose weight in a short time!
+                <br>
+                <br>
+                The recommended training age for this programme is 0-2 years.
+                <br>
+                <br>
+                6/10 difficulty 
+                <br>
+                <br>
+                <h3>Summary</h3>
+                <p>
+                  <ul class="training-plan-list">
+                    <li>12 week long programme</li>
+                    <li>High frequency training</li>
+                    <li>3x a week weight lifting</li>
+                    <li>3x a week Light cardio</li>
+                    <li>Sustainable weight loss</li>
+                    <li>Comes with a diet plan</li>
+                    <li>Ranked at a 6 out of 10 on the difficulty scale</li>
+                    <li>Designed for losing weight steadily</li>
+                  </ul>
+                </p>
+            </div>
+            <div class="box" data-AOS="fade-left">
+              <div class="card" style="width: 18rem" >
+                <img
+                  src="../static/Images/lean-couple.jpg"
+                  class="card-image-strength-programme"
+                  alt="a picture of a lean couple"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">12 Week Weight Loss</h5>
+                  <p class="card-text">
+                    Click below if you want to lose weight
+                  </p>
+                  <br>
+                  <h5>£100</h5>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id = "powerbuilding" class="light-section">
+          <div class="grid">
+            <div class="box box-info" data-AOS="fade-right">
+              <h2>Powerbuilding</h2>
+              <h3>12-week training plan</h3>
+              <h3>intermediate level</h3>
+              <p>
+                Perfect for anyone into powerlifting and bodybuilding!
+                <br>
+                <br>
+                The recommended training age for this programme is 2-3 years of weight lifting in the gym.
+                <br>
+                <br>
+                6/10 difficulty 
+                <br>
+                <h3>Summary</h3>
+                <p>
+                  <ul class="training-plan-list">
+                    <li>12 week long programme</li>
+                    <li>Moderate frequency, high volume</li>
+                    <li>2x a week on every exercise and muscle group</li>
+                    <li>Combination compound exercises (Squats, deadlifts, squats, pull ups/lat pulldowns)</li>
+                    <li>Combination isolation and machine exercises</li>
+                    <li>Ranked at a 8 out of 10 on the difficulty scale</li>
+                    <li>Designed for improving strength and size</li>
+                    <li>Primary benefit is strength</li>
+                  </ul>
+                </p>
+              </p>
+            </div>
+            <div class="box" data-AOS="fade-left">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../static/Images/overhead-squat.jpg"
+                  class="card-image-strength-programme"
+                  alt="a picture of a overhead squat"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Powerbuilding</h5>
+                  <p class="card-text">
+                    Click below if you want to find a programme to give you quick and
+                    persistent strength and size progress.
+                  </p>
+                  <h5>£50</h5>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="running" class="training-plan-section-dark" data-AOS="fade-up">
+        <div class="section-dark">
+          <div class="grid grid-dark">
+            <div class="box text-white box-info" data-AOS="fade-right">
+              <h2>Couch to 5K plan</h2>
+              <h3>12-week training plan</h3>
+              <h3>Beginner level</h3>
+              <p>
+                Perfect for anyone looking to condition themselves for a 5k in a short time!
+                <br>
+                <br>
+                The recommended training age for this programme is 0-2 years.
+                <br>
+                <br>
+                5/10 difficulty 
+                <br>
+                <br>
+                <h3>Summary</h3>
+                <p>
+                  <ul class="training-plan-list">
+                    <li>12 week long programme</li>
+                    <li>moderate frequency training</li>
+                    <li>3x a week walking/running</li>
+                    <li>Intensity ramps up as programme continues</li>
+                    <li>Sustainable weight loss and fitness</li>
+                    <li>Ranked at a 5 out of 10 on the difficulty scale</li>
+                    <li>Designed for improving fitness steadily</li>
+                    <li>Injury prevention approach</li>
+                  </ul>
+                </p>
+            </div>
+            <div class="box" data-AOS="fade-left">
+              <div class="card" style="width: 18rem" >
+                <img
+                  src="../static/Images/running.jpg"
+                  class="card-image-strength-programme"
+                  alt="a picture of a woman running"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">12 Week Couch to 5k</h5>
+                  <p class="card-text">
+                    Click below if you want do your first 5k. Or get conditioned to do it again.
+                  </p>
+                  <br>
+                  <h5>£100</h5>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="personalised" class="light-section">
+          <div class="grid">
+            <div class="box box-info" data-AOS="fade-right">
+              <h2>Online Personal Training and Personalised Plan</h2>
+              <h3>month by month training plans</h3>
+              <h3>Tailored to your ability</h3>
+              <p>
+                Suitable for any and all interested in training, from beginner to athlete
+                <br>
+                <br>
+                <h3>Benefits of online personal training package</h3>
+                <p>
+                  <ul class="training-plan-list">
+                    <li>Weekly reviews</li>
+                    <li>Perosnalised programmes suited for you</li>
+                    <li>Technique analysis</li>
+                    <li>Professional advice</li>
+                    <li>Injury prevention</li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </p>
+              </p>
+            </div>
+            <div class="box" data-AOS="fade-left">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../static/Images/clients-planking.jpg"
+                  class="card-image-strength-programme"
+                  alt="a picture of a PT whose clients are planking"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Personalised Programmes & Online PT</h5>
+                  <p class="card-text">
+                    Click below if you want a programme tailored specifically for you.
+                  </p>
+                  <h5>£150</h5>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="athletic-performance" class="training-plan-section-dark" data-AOS="fade-up">
+        <div class="section-dark">
+          <div class="grid grid-dark">
+            <div class="box text-white box-info" data-AOS="fade-right">
+              <h2>Athletic Performance Programme</h2>
+              <h3>12-week speed, agility and stablility programme</h3>
+              <h3>intermediate level</h3>
+              <p>
+                Perfect for anyone looking to improve their athletic performance in their chosen sport in a short time!
+                <br>
+                <br>
+                The recommended training age for this programme is 2-5 years.
+                <br>
+                <br>
+                8/10 difficulty 
+                <br>
+                <br>
+                <h3>Summary</h3>
+                <p>
+                  <ul class="training-plan-list">
+                    <li>12 week long programme</li>
+                    <li>High frequency training</li>
+                    <li>Combination of plyometrics drills</li>
+                    <li>agility drills, stability and power training</li>
+                    <li>Reduces likelyhood of injury in sport</li>
+                    <li>Improves sprint speed, jump height, agility, balance, and power</li>
+                    <li>Ranked at a 8 out of 10 on the difficulty scale</li>
+                  </ul>
+                </p>
+            </div>
+            <div class="box" data-AOS="fade-left">
+              <div class="card" style="width: 18rem" >
+                <img
+                  src="../static/Images/dunk.jpg"
+                  class="card-image-strength-programme"
+                  alt="a picture of a dunk"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">12 week Atheltic performance</h5>
+                  <p class="card-text">
+                    Click below if you want to build your athletic potential
+                  </p>
+                  <br>
+                  <h5>£100</h5>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="power" class="light-section">
+          <div class="grid">
+            <div class="box box-info" data-AOS="fade-right">
+              <h2>Power</h2>
+              <h3>12-week training plan</h3>
+              <h3>Expert level</h3>
+              <p>
+                Perfect for anyone into sports with high power demand i.e. Rugby!
+                <br>
+                <br>
+                The recommended training age for this programme is 2-5 years of weight lifting in the gym.
+                <br>
+                <br>
+                8/10 difficulty 
+                <br>
+                <h3>Summary</h3>
+                <p>
+                  <ul class="training-plan-list">
+                    <li>12 week long programme</li>
+                    <li>Moderate frequency, moderate volume</li>
+                    <li>2x a week on every exercise and muscle group</li>
+                    <li>Combination strength and speed work</li>
+                    <li>Ranked at a 8 out of 10 on the difficulty scale</li>
+                    <li>Designed for improving strength and power</li>
+                    <li>Primary benefit is power</li>
+                  </ul>
+                </p>
+              </p>
+            </div>
+            <div class="box" data-AOS="fade-left">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../static/Images/sled-push.jpg"
+                  class="card-image-strength-programme"
+                  alt="a picture of a sled push"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">12 Week Power Plan</h5>
+                  <p class="card-text">
+                    Click below if you want to find a programme to give you quick and
+                    persistent strength and power progress.
+                  </p>
+                  <h5>£50</h5>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+              </div>
+            </div>        
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+{% endblock %}

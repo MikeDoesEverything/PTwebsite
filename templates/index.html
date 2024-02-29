@@ -1,0 +1,341 @@
+{% extends "base.html" %}{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Training Masters</title>
+    <link href="/static/CSS/design.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="black-cover">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>The Personal Training Masters</h1>
+          <p>Train Smart</p>
+          <a href="#training-cards">
+            <button type="button" class="btn btn-dark">
+              Click here to start your journey
+            </button>
+          </a>
+        </div>
+      </div>
+
+      {% comment %} Card container section {% endcomment %}
+
+      <section id="training-cards" class="card-section">
+        <div
+          class="card-container"
+          data-AOS="zoom-in-up"
+          data-AOS-duration="1000"
+        >
+          <div class="card" style="width: 18rem">
+            <img
+              src="../static/Images/deadlift-bar-cropped.jpg"
+              class="card-image-strength-programme"
+              alt="a picture of a deadlift"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Strength Programmes</h3>
+              <p class="card-text">
+                Click below if you want to find a programme to give you quick
+                and persistent strength progress.
+              </p>
+              <a href="/training-plans/#strength" class="btn btn-primary"
+                >Click Here</a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="../static/Images/shoulder-press.jpg"
+              class="card-image-hypertrophy-programme"
+              alt="a picture of a shoulder press"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Hypertrophy Programmes</h3>
+              <p class="card-text">
+                Click below if you want to find a programme to give you quick
+                and persistent Hypertrophy (muscle size increase) progress.
+              </p>
+              <a href="/training-plans/#hypertrophy" class="btn btn-primary"
+                >Click Here</a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="../static/Images/lean-couple.jpg"
+              class="card-image-strength-programme"
+              alt="a picture of a lean couple"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Weight loss Programmes</h3>
+              <p class="card-text">
+                Click below if you want to find a programme to give you quick
+                and persistent weight loss.
+              </p>
+              <a href="/training-plans/#weight-loss" class="btn btn-primary"
+                >Click Here</a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="../static/Images/overhead-squat.jpg"
+              class="card-image-strength-programme"
+              alt="a picture of a overhead squat"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Powerbuilding Programmes</h3>
+              <p class="card-text">
+                Click below if you want to find a programme to give you quick
+                and persistent strength and hypertrophy progress.
+              </p>
+              <a href="/training-plans/#powerbuilding" class="btn btn-primary"
+                >Click Here</a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="../static/Images/running.jpg"
+              class="card-image-strength-programme"
+              alt="a picture of a women running"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Endurance Programmes</h3>
+              <p class="card-text">
+                Click below if you want to find a programme to give you quick
+                and persistent strength progress.
+              </p>
+              <a href="/training-plans/#running" class="btn btn-primary"
+                >Click Here</a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="../static/Images/clients-planking.jpg"
+              class="card-image-strength-programme"
+              alt="a picture of a PT with clients planking"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Personalised Programmes</h3>
+              <p class="card-text">
+                Click below if you want to find a programme to give you quick
+                and persistent progress.
+              </p>
+              <a href="/training-plans/#personalised" class="btn btn-primary"
+                >Click Here</a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="../static/Images/dunk.jpg"
+              class="card-image-strength-programme"
+              alt="a picture of a man dunking"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Athletic Performance</h3>
+              <p class="card-text">
+                Click below if you want to improve your athletic ability, such
+                as acceleration, agility, sprint speed, jump height etc.
+              </p>
+              <a
+                href="/training-plans/#athletic-performance"
+                class="btn btn-primary"
+                >Click Here</a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="../static/Images/sled-push.jpg"
+              class="card-image-strength-programme"
+              alt="a picture of a man pushing a sled"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Power</h3>
+              <p class="card-text">
+                Click below if you want to improve the power you produce for
+                your upper and lower body.
+              </p>
+              <a href="/training-plans/#power" class="btn btn-primary"
+                >Click Here</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {% comment %} grid text section {% endcomment %}
+
+      <section class="light-section">
+        <div class="qualifications">
+          <div class="grid">
+            <div class="box" data-AOS="fade-right">
+              <h2>Why choose me?</h2>
+              <br />
+              <h3>My experience and qualifications</h3>
+              <br />
+              <ul>
+                <li>University degree in sports science (BSC)</li>
+                <li>Level 4 in strength and conditioning</li>
+                <li>Level 3 in Personal training</li>
+                <li>Level 2 in Gym instructing</li>
+                <li>Sports nutrition diploma</li>
+                <li>Nearly a decade’s worth of coaching gym based training</li>
+                <li>A decade of independent study</li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="box" data-AOS="fade-left">
+              <img
+                class="table-image"
+                src="../static/Images/mike.jpg"
+                alt="a picture of me"
+              />
+            </div>
+          </div>
+          <div class="grid">
+            <div class="box ordered-table-image" data-AOS="fade-right">
+              <img
+                class="table-image"
+                src="../static/Images/mike2.jpg"
+                alt="a picture of me"
+              />
+            </div>
+            <div class="box ordered-box" data-AOS="fade-left">
+              <h2>What separates me from other PT’s?</h2>
+              <br />
+              <p>
+                I am the most qualified personal trainer in the area. With my
+                bachelor’s degree in Sports Science, level 4 in strength and
+                conditioning and level 3 in personal training and my other
+                numerous qualifications, there is no competition. And even more
+                importantly, I am still building upon my knowledge and skills in
+                order to provide you with the best service. In my experience
+                personal training, I have worked with clients of all shapes
+                sizes and skill levels. Some of my clients were obese, some were
+                anorexic, some worked in the military, some were elite, world
+                class athletes, some were bodybuilders and some spent too much
+                time behind a desk and just wanted some exercise. Whatever your
+                goals, I can help you achieve them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% comment %}
+      <section class="qualifications-paragraph"></section>
+      {% endcomment %}
+      <section class="newcomer-section" data-AOS="fade-up">
+        <div class="newcomer-message">
+          <h2>Afraid of starting? Don’t be</h2>
+          <p>
+            I realise that many of you will be newcomers to fitness. I
+            understand you will likely feel intimidated, as this is likely all
+            new territory to you. If you do feel this way please feel free to
+            call me, or message me on 07964237996. I provide a free, no
+            obligation 30 minute consultation, to any new customer. This can be
+            done either in person or over the phone. But if the idea of calling
+            me makes you anxious, please feel free to text me on the number
+            above, or email theathleteapproach@gmail.com You really have nothing
+            to lose. So if you feel that you want guidance or even if you’re not
+            sure, please contact me.
+          </p>
+        </div>
+        <br />
+        <br />
+        <div class="my-commitment">
+          <h2>My commitment to you</h2>
+          <p>
+            Each client has individual needs. And I am committed to ensuring
+            that whatever your goal, you get results. I have had clients in the
+            past who had serious health issues, previous devastating injuries,
+            or anxiety issues. In all cases I am committed to doing the
+            research, so I can accommodate your needs, and, craft and implement
+            the ideal training plan to work around those needs.
+          </p>
+        </div>
+      </section>
+      <section class="light-section bottom-section">
+        <div class="one-to-one-section">
+          <div class="grid">
+            <div class="box" data-AOS="fade-right">
+              <h2>Personal Training</h2>
+              <br />
+              <h3>
+                Live near the Sudbury area? Why not have a personal session at
+                the gym with me?
+              </h3>
+              <br />
+              <ul>
+                <li>University degree in sports science (BSC)</li>
+                <li>Level 4 in strength and conditioning</li>
+                <li>Level 3 in Personal training</li>
+                <li>Level 2 in Gym instructing</li>
+                <li>Sports nutrition diploma</li>
+                <li>Nearly a decade’s worth of coaching gym based training</li>
+                <li>A decade of independent study</li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="box" data-AOS="fade-left">
+              <img
+                class="table-image"
+                src="../static/Images/woman-pressing.jpg"
+                alt="a picture of a woman pressing"
+              />
+            </div>
+          </div>
+          <div class="grid">
+            <div class="box ordered-table-image" data-AOS="fade-right">
+              <img
+                class="table-image"
+                src="../static/Images/online-pt.jpg"
+                alt="a picture of a woman using a laptop"
+              />
+            </div>
+            <div class="box ordered-box" data-AOS="fade-left">
+              <h2>Train From Anywhere With Me</h2>
+              <h2>With Online Personal Training</h2>
+              <br />
+              <ul>
+                <li>
+                  Online personal training offers numerous benefits for
+                  individuals seeking fitness guidance and support.
+                </li>
+                <li>It provides flexibility and convenience</li>
+                <li>
+                  Personalised training programmes tailored specifically to you
+                </li>
+                <li>More affordable</li>
+                <li>
+                  Weekly contact over the phone for updates keeping you
+                  accountable
+                </li>
+                <li>
+                  Technique analysis if you are willing to film yourself in the
+                  gym
+                </li>
+                <li>Professioanl advice</li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
+{% endblock %}
